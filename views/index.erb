@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <meta charset="utf-8">
+    <style type="text/css">
+    h1{
+      font-family: 'Lobster', cursive;
+      font-size: 45px;
+    }
+       body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f7d8d8;
+        }
+        #div{
+          margin: 0 auto;
+          text-align: left;
+          width: 160px;
+        }
+        img{
+          margin-right: 60%;
+          width: 200%;
+    </style>
+    <title>MyPage</title>
+    </head>
+
+<body>
+    <h1><%= @title %></h1>
+<h1>МАШИНА ЗА ГЛАСУВАНЕ</h1>
+<h3>Къде да обядваме?</h3>
+<div id="div">
+<form action="/cast">
+<ol id="new">
+<input name="eat" value="happy" type="radio">Happy</input>
+  <br>
+  <input name="eat" value="krivoto" type="radio">Кривото</input>
+  <br>
+  <input name="eat" value="pizza" type="radio">Мистър Пица</input>
+  <br>
+  <input name="eat" value="luna" type="radio">Слъце-луна</input>
+  <br>
+  <input name="eat" value="ugo" type="radio">Уго</input>
+  <br>
+  <input name="eat" value="kitchen" type="radio">Soul Kitchen</input>
+  <br>
+  <input name="eat" value="divaka" type="radio">Дивака</input>
+  <br>
+</ol>
+<img src="https://cdn.pixabay.com/photo/2016/12/05/10/07/dish-1883501_960_720.png" >
+</div>
+<br>
+<button class="btn btn-success" type="submit">ГЛАСУВАЙ</button>
+</form>
+</body>
+</html>

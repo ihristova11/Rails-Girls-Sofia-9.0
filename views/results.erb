@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <meta charset="utf-8">
+    <style type="text/css">
+    h1{
+      font-family: 'Lobster', cursive;
+      font-size: 45px;
+      text-align: center;
+    }
+       body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f7d8d8;
+        }
+        #div{
+          margin: 0 auto;
+          text-align: left;
+          width: 160px;
+        }
+        img{
+          margin-right: 60%;
+          width: 200%;
+    </style>
+    <title>MyPage</title>
+    </head>
+
+<body>
+    <h1>РЕЗУЛТАТИ</h1>
+<table class="table table-striped">
+    <tr class = "warning">
+        <td>
+            Happy
+        </td>
+        <td>
+            <%= @votes['happy'] %>
+        </td>
+        <td>
+          <%= '#' * @votes.fetch('happy', 0)%>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Кривото
+        </td>
+        <td>
+            <%= @votes['krivoto'] %>
+        </td>
+        <td>
+            <%='#' * @votes.fetch('krivoto', 0)%>        
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Мистър Пица 
+        </td>
+        <td>
+            <%= @votes['pizza'] %>
+        </td>
+        <td>
+            <%='#' * @votes.fetch('pizza', 0)%>       
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Слъце-луна 
+        </td>
+        <td>
+            <%= @votes['luna'] %>
+        </td>
+        <td>
+            <%='#' * @votes.fetch('luna', 0) %> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Уго 
+        </td>
+        <td>
+            <%= @votes['ugo'] %>
+        </td>
+        <td>
+            <%='#' * @votes.fetch('ugo', 0) %>      
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Soul Kitchen 
+        </td>
+        <td>
+            <%= @votes['kitchen'] %>
+        </td>
+        <td>
+            <%='#' * @votes.fetch('kitchen', 0)%>      
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Дивака
+        </td>
+        <td>
+            <%= @votes['divaka'] %>
+        </td>
+        <td>
+            <%= '#' * @votes.fetch('divaka', 0)%>      
+        </td>
+    </tr>
+    
+</table>
+
+<a href="/" class="btn btn-success">Гласувай отново!</button></a>
+</body>
+</html>
